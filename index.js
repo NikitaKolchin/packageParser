@@ -3,7 +3,7 @@ const filenameFromArg = process.argv[2];
 
 const getKeysString = (dependencies) =>
   Object.keys(dependencies || {})
-    .reduce((acc, key) => acc + key + ", ", "")
+    .reduce((acc, key) => acc + key + " ", "")
     .slice(0, -2);
 
 const parsePackageJson = (filename) => {
